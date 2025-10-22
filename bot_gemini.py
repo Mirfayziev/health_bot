@@ -720,13 +720,14 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     logger.error(f"Error: {context.error}")
 
 
+#def main():
+ #   """Botni ishga tushirish"""
+  #  if not TELEGRAM_TOKEN:
+   #     raise ValueError("❌ TELEGRAM_BOT_TOKEN topilmadi!")
+   # if not GEMINI_API_KEY:
+    #    raise ValueError("❌ GEMINI_API_KEY topilmadi!")
 def main():
     """Botni ishga tushirish"""
-    if not TELEGRAM_TOKEN:
-        raise ValueError("❌ TELEGRAM_BOT_TOKEN topilmadi!")
-    if not GEMINI_API_KEY:
-        raise ValueError("❌ GEMINI_API_KEY topilmadi!")
-    
     application = Application.builder().token(TELEGRAM_TOKEN).build()
     
     conv_handler = ConversationHandler(
@@ -757,5 +758,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

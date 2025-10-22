@@ -27,7 +27,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # API kalitlari
-TELEGRAM_TOKEN = os.getenv("8321755260:AAHzrU2HhnWEARnxvn8dykq3ixw5r2PX2nM")
+TELEGRAM_TOKEN = os.getenv("8163235022:AAEbOvO-GqCQLYmR2RNfpnmjDzXCaxFusXE")
 GEMINI_API_KEY = os.getenv("AIzaSyAeDbNZVcpZ7wemRVCc9dvkoaMFkJZZ16A")
 
 # Google Gemini AI sozlash
@@ -758,6 +758,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
